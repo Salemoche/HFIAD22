@@ -29,8 +29,54 @@ header li {
     gap: 8px;
 }
 
+/* main */
+
+section {
+    height: 100vh;
+    background: lightgray;
+    padding: 16px;
+    position: relative;
+}
+
+/* gallery */
+.gallery {
+    background: gray;
+    display: grid;
+    width: 100%;
+    height: 50%;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-column-gap: 16px;
+}
+
+.tile {
+    /* aspect-ratio: 1/1; */
+    background: yellow;
+    /* grid-row: 1 / span 3; */
+}
+
 
 /* footer */
 .list-element-footer {
     color: red;
+}
+
+@media screen and (max-width: 1024px) {
+
+
+.gallery {
+    height: unset;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 16px;
+}
+    
+    .tile {
+        background: blue;
+        grid-column: span 4;
+    }
+
+
+    footer li {
+        color: pink;
+    }
 }
