@@ -1,7 +1,36 @@
-header {
-    color: green;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
 }
 
 li {
-    color: rgb(255, 0, 0);
+    font-weight: 600;
+}
+
+/* header */
+
+header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header li {
+    color: green;
+}
+
+.header-navigation-list {
+    display: flex;
+    gap: 8px;
+}
+
+
+/* footer */
+.list-element-footer {
+    color: red;
 }
