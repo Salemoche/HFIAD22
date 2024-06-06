@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+header input[type="text"] {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+.hide {
+    top: -100px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.column1, .column2 {
+    width: 100%;
+}
+
+.column1 {
+    flex: 2;
+}
+
+.column2 {
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.article-tile, .staff-picks, .recommended-topics, .who-to-follow {
+    margin-bottom: 20px;
+}
