@@ -26,10 +26,11 @@
 header {
     display: flex;
     justify-content: space-between;
+    padding: 8px;
 }
 
-header:active {
-    background: blue;
+header:hover {
+    background: lightgray;
 }
 
 header ul {
@@ -41,7 +42,18 @@ header ul {
 .sub-navigation-list {
     display: flex;
     flex-direction: column;
-    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s;
+    /* display: none; */
+}
+
+.dropdown-container:hover .sub-navigation-list {
+    opacity: 1;
+    pointer-events: all;
 }
 
 
@@ -71,7 +83,7 @@ header ul {
 .gallery-item:nth-child(odd) {
     grid-column-start: auto;
     grid-column-end: span 2;
-    background: green;
+    /* background: green; */
 }
 
 /* Collumns */
@@ -85,7 +97,7 @@ header ul {
 .column-1 {
     grid-column-start: 1;
     grid-column-end: 9;
-    background: green;
+    /* background: green; */
 }
 
 .column-2 {
@@ -144,4 +156,10 @@ header ul {
     position: sticky;
     top: 0;
     z-index: 1000; /* This ensures the header stays on top of other elements */
+}
+
+/* JQuery */
+
+.background-green {
+    background: green;
 }
